@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-blue-300">
+
+    <div class="max-w-7xl mx-auto bg-red-200">
+
+        <!-- Navbar -->
+        <div class="bg-[#F8FAFC] flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-4">
+
+            <!-- Logo & Header -->
+            <div class="flex items-center gap-2 justify-center md:justify-start">
+
+                <img src="Mobile-1.webp" alt="Logo" class="w-10 h-10 border-xl rounded-full">
+                <a href="#" class="text-2xl font-bold text-gray-800">TECH-CENTER</a>
+
+            </div>
+
+            <!-- Nav-list -->
+            <div class="">
+
+                <ul
+                    class="flex flex-col md:flex-row items-center gap-4 md:gap-6 font-medium text-gray-700 hover:scale-150 transition duration-300">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">NEW ARRIVAL</a>
+                    <a href="#">CONTACT US</a>
+                </ul>
+            </div>
+
+            <!-- Button-Area -->
+            <div class="flex justify-center md:justify-end gap-4">
+                <i
+                    class="fa-solid fa-magnifying-glass border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+                <i
+                    class="fa-solid fa-share-nodes border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+                <i
+                    class="fa-solid fa-moon border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+
+            </div>
+
+        </div>
+
+        <!-- Hero -->
+
+        <div class="bg-[url('/Hero.jpg')] bg-cover bg-center w-full h-screen px-4 py-16 md:px-10">
+
+            <div class="border-4 border-blue-600 rounded-3xl p-6 md:p-12 hover:scale-105 transition duration-300">
+
+                <!-- content-box -->
+                <div class="">
+
+                    <div class="">
+                        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 ">Brand New</h1>
+                        <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mt-2">Collection</h1>
+                    </div>
+
+                    <div class="py-6 text-gray-700 font-medium leading-7">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Et magni nemo perferendis
+                            sequi vel</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 gap-4 pb-8">
+                        <a href="#" class="flex items-center gap-2">
+                            <i class="fa-solid fa-check"></i>
+                            Top Brands</a>
+                        <a href="#" class="flex items-center gap-2">
+                            <i class="fa-solid fa-check"></i>
+                            High Quality</a>
+                        <a href="#" class="flex items-center gap-2">
+                            <i class="fa-solid fa-check"></i>
+                            Free Delivery</a>
+                    </div>
+
+                    <div class="">
+                        <button
+                            class="border rounded-lg py-3 px-10 bg-blue-400 hover:bg-green-500 text-white cursor-pointer transition duration-300">Shop
+                            now</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Hero-bottom-section -->
+
+        <section class=" py-12 px-4 bg-blue-200">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Item -->
+                <div class="text-center bg-white rounded-2xl p-6 shadow-md">
+                    <div class="pb-3 text-4xl text-blue-600">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <p class="text-2xl font-bold">Secure Payment</p>
+                    <p class="font-medium text-gray-600 mt-2">
+                        Safe and secure transactions.
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="text-center bg-white rounded-2xl p-6 shadow-md">
+                    <div class="pb-3 text-4xl text-blue-600">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+
+                    <p class="text-2xl font-bold">30 Days Return</p>
+                    <p class="font-medium text-gray-600 mt-2">
+                        Easy return policy available.
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="text-center bg-white rounded-2xl p-6 shadow-md">
+                    <div class="pb-3 text-4xl text-blue-600">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <p class="text-2xl font-bold">24/7 Support</p>
+                    <p class="font-medium text-gray-600 mt-2">
+                        Customer support anytime.
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="text-center bg-white rounded-2xl p-6 shadow-md">
+                    <div class="pb-3 text-4xl text-blue-600">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+
+                    <p class="text-2xl font-bold">Free Delivery</p>
+                    <p class="font-medium text-gray-600 mt-2">
+                        Free shipping for all orders.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- New Arrivals Cards -->
+
+        <div class="p-6 md:p-10">
+
+            <!-- Header box -->
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">New Arrivals</h2>
+
+
+                <button class="border px-5 py-2 rounded-lg bg-white hover:bg-gray-200 transition cursor-pointer">View
+                    All</button>
+
+            </div>
+
+            <!-- Cards Box -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- card1 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="Mobile-1.webp" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- card2 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="Mobile-2.jpg" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card3 -->
+
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="Mobile-3.webp" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card4 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="Mobile-4.webp" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- card5 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="lap-1.jpg" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- card6 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="lap-2.webp" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card7 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="lap-3.webp" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card8 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="lap-4.webp" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- card9 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="Ipad-1.jpg" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- card10 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="Ipad-2.jpg" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card11 -->
+
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="Mobile-3.webp" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card4 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+
+                    <img src="Mobile-4.webp" alt="Mobile"
+                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Fashion Product
+                        </h3>
+
+                        <p class="text-gray-600 text-sm mb-4">
+                            Premium quality product with modern design.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
+                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
+                        </div>
+
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
