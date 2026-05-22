@@ -9,81 +9,94 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body class="bg-blue-300">
+<body class="">
 
-    <div class="max-w-7xl mx-auto bg-red-200">
+    <div class=" mx-auto bg-[#6f4e37]">
 
-        <!-- Navbar -->
-        <div class="bg-[#F8FAFC] flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-4">
+        <div class="bg-[url('/Hero-2.jpg')] bg-cover bg-center w-full h-screen">
 
-            <!-- Logo & Header -->
-            <div class="flex items-center gap-2 justify-center md:justify-start">
+            <!-- Navbar -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-4 ">
 
-                <img src="Mobile-1.webp" alt="Logo" class="w-10 h-10 border-xl rounded-full">
-                <a href="#" class="text-2xl font-bold text-gray-800">TECH-CENTER</a>
+                <!-- Logo & Header -->
+                <div class="flex items-center gap-2 justify-between md:justify-start">
+
+                    <div class="flex">
+
+                        <img src="Mobile-1.webp" alt="Logo" class="w-10 h-10 border-xl rounded-full">
+                        <a href="#" class="text-3xl font-bold text-gray-800 text-white animate-bounce">TECH-CENTER</a>
+
+                    </div>
+
+
+                    <button id="nav-btn" class="md:hidden text-2xl cursor-pointer">
+
+                        <i id="nav-icon" class="fa-solid fa-bars text-white"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- Nav-list -->
+
+                <div id="nav-list"
+                    class="hidden md:flex flex-col md:flex-row items-center justify-center gap-4 md:gap-4 lg:gap-16 text-lg font-medium pt-2 text-white transition hover:scale-200 duration-300">
+                    <a href="#" class="hover:text-blue-400">Home</a>
+                    <a href="#" class="hover:text-blue-400">About</a>
+                    <a href="#" class="hover:text-blue-400">Services</a>
+                    <a href="#" class="hover:text-blue-400">Contact</a>
+                </div>
+
+                <!-- Button-Area -->
+                <div class="flex justify-center md:justify-end gap-4">
+                    <i
+                        class="fa-solid fa-magnifying-glass border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+                    <i
+                        class="fa-solid fa-share-nodes border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+                    <i
+                        class="fa-solid fa-moon border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+
+                </div>
 
             </div>
 
-            <!-- Nav-list -->
-            <div class="">
+            <!-- Hero -->
 
-                <ul
-                    class="flex flex-col md:flex-row items-center gap-4 md:gap-6 font-medium text-gray-700 hover:scale-150 transition duration-300">
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">NEW ARRIVAL</a>
-                    <a href="#">CONTACT US</a>
-                </ul>
-            </div>
+            <div class=" px-4 py-16 md:px-10">
 
-            <!-- Button-Area -->
-            <div class="flex justify-center md:justify-end gap-4">
-                <i
-                    class="fa-solid fa-magnifying-glass border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
-                <i
-                    class="fa-solid fa-share-nodes border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
-                <i
-                    class="fa-solid fa-moon border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+                <div class="border-4 border-blue-600 rounded-3xl p-6 md:p-12 hover:scale-105 transition duration-300">
 
-            </div>
-
-        </div>
-
-        <!-- Hero -->
-
-        <div class="bg-[url('/Hero.jpg')] bg-cover bg-center w-full h-screen px-4 py-16 md:px-10">
-
-            <div class="border-4 border-blue-600 rounded-3xl p-6 md:p-12 hover:scale-105 transition duration-300">
-
-                <!-- content-box -->
-                <div class="">
-
+                    <!-- content-box -->
                     <div class="">
-                        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 ">Brand New</h1>
-                        <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mt-2">Collection</h1>
-                    </div>
 
-                    <div class="py-6 text-gray-700 font-medium leading-7">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Et magni nemo perferendis
-                            sequi vel</p>
-                    </div>
+                        <div class="">
+                            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 text-white">Brand New</h1>
+                            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mt-2 text-white hover:text-blue-400">Collection</h1>
+                        </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 gap-4 pb-8">
-                        <a href="#" class="flex items-center gap-2">
-                            <i class="fa-solid fa-check"></i>
-                            Top Brands</a>
-                        <a href="#" class="flex items-center gap-2">
-                            <i class="fa-solid fa-check"></i>
-                            High Quality</a>
-                        <a href="#" class="flex items-center gap-2">
-                            <i class="fa-solid fa-check"></i>
-                            Free Delivery</a>
-                    </div>
+                        <div class="py-6 text-gray-700 font-medium leading-7 text-white">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Et magni nemo perferendis
+                                sequi vel</p>
+                        </div>
 
-                    <div class="">
-                        <button
-                            class="border rounded-lg py-3 px-10 bg-blue-400 hover:bg-green-500 text-white cursor-pointer transition duration-300">Shop
-                            now</button>
+                        <div class="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 gap-4 pb-8 text-white">
+                            <a href="#" class="flex items-center gap-2">
+                                <i class="fa-solid fa-check"></i>
+                                Top Brands</a>
+                            <a href="#" class="flex items-center gap-2">
+                                <i class="fa-solid fa-check"></i>
+                                High Quality</a>
+                            <a href="#" class="flex items-center gap-2">
+                                <i class="fa-solid fa-check"></i>
+                                Free Delivery</a>
+                        </div>
+
+                        <div class="">
+                            <button
+                                class="border rounded-lg py-3 px-10 bg-blue-400 hover:bg-green-500 text-white cursor-pointer transition duration-300 font-bold active:bg-red-500 active:scale-120">Shop
+                                now</button>
+                        </div>
+
                     </div>
 
                 </div>
@@ -94,12 +107,12 @@
 
         <!-- Hero-bottom-section -->
 
-        <section class=" py-12 px-4 bg-blue-200">
+        <section class="py-12 px-4 bg-">
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                 <!-- Item -->
-                <div class="text-center bg-white rounded-2xl p-6 shadow-md">
+                <div class="text-center bg-red-200 rounded-2xl p-6 shadow-md animate-pulse trantision">
                     <div class="pb-3 text-4xl text-blue-600">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
@@ -111,7 +124,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="text-center bg-white rounded-2xl p-6 shadow-md">
+                <div class="text-center bg-red-200 rounded-2xl p-6 shadow-md animate-pulse trantision">
                     <div class="pb-3 text-4xl text-blue-600">
                         <i class="fa-solid fa-rotate"></i>
                     </div>
@@ -123,7 +136,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="text-center bg-white rounded-2xl p-6 shadow-md">
+                <div class="text-center bg-red-200 rounded-2xl p-6 shadow-md animate-pulse trantision">
                     <div class="pb-3 text-4xl text-blue-600">
                         <i class="fa-solid fa-headset"></i>
                     </div>
@@ -135,7 +148,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="text-center bg-white rounded-2xl p-6 shadow-md">
+                <div class="text-center bg-red-200 rounded-2xl p-6 shadow-md animate-pulse trantision">
                     <div class="pb-3 text-4xl text-blue-600">
                         <i class="fa-solid fa-truck-fast"></i>
                     </div>
@@ -156,24 +169,26 @@
 
             <!-- Header box -->
             <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
-                <h2 class="text-3xl font-bold text-gray-800">New Arrivals</h2>
+                <h2 class="text-5xl font-bold text-white animate-bounce">New Arrivals</h2>
 
 
-                <button class="border px-5 py-2 rounded-lg bg-white hover:bg-gray-200 transition cursor-pointer">View
+                <button
+                    class="border px-5 py-2 rounded-lg bg-white hover:bg-gray-200 transition cursor-pointer active:bg-red-500 active:scale-120">View
                     All</button>
 
             </div>
 
             <!-- Cards Box -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                 <!-- card1 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div
+                    class="group bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
 
                     <img src="Mobile-1.webp" alt="Mobile"
                         class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
 
-                    <div class="p-5">
+                    <div class="group-hover:text-blue-600 p-5">
 
                         <h3 class="text-xl font-bold mb-2">
                             Fashion Product
@@ -534,12 +549,112 @@
 
         <!-- Footer -->
 
-        <div class="">
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-gray-300">
+            <div class="max-w-7xl mx-auto px-6 py-12">
 
-        </div>
+                <!-- Top Footer -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 items-center">
+
+                    <!-- Brand -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-white">Tech-Center</h2>
+                        <p class="mt-4 text-sm leading-6">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit non quia perferendis voluptates alias?
+                        </p>
+
+                        <!-- Social Icons -->
+                        <div class="flex space-x-4 mt-6">
+                            <a href="#" class="hover:text-white transition">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                            <a href="#" class="hover:text-white transition">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+
+                            <a href="#" class="hover:text-white transition">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li><a href="#" class="hover:text-white transition">Home</a></li>
+                            <li><a href="#" class="hover:text-white transition">About</a></li>
+                            <li><a href="#" class="hover:text-white transition">Services</a></li>
+                            <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h3 class="text-white text-lg font-semibold mb-4">Resources</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                            <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <!-- Bottom Footer -->
+                <div
+                    class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+                    <p>© 2026 Tech-Center. All rights reserved.</p>
+
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-white transition">Privacy</a>
+                        <a href="#" class="hover:text-white transition">Terms</a>
+                        <a href="#" class="hover:text-white transition">Cookies</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
 
     </div>
 
 </body>
+
+<script>
+
+    const navBtn = document.getElementById("nav-btn");
+
+    const navlist = document.getElementById("nav-list");
+
+    const navIcon = document.getElementById("nav-icon");
+
+
+    navBtn.addEventListener("click", () => {
+
+        navlist.classList.toggle("hidden");
+
+        navlist.classList.toggle("flex");
+
+
+        if (navIcon.classList.contains("fa-bars")) {
+
+            navIcon.classList.remove("fa-bars");
+
+            navIcon.classList.add("fa-xmark");
+
+        } else {
+
+            navIcon.classList.remove("fa-xmark");
+
+            navIcon.classList.add("fa-bars");
+
+        }
+
+    });
+
+</script>
 
 </html>
