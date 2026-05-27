@@ -40,7 +40,7 @@
                 <!-- Nav-list -->
 
                 <div id="nav-list"
-                    class="hidden md:flex flex-col md:flex-row items-center justify-center gap-4 md:gap-4 lg:gap-16 text-lg font-medium pt-2 text-white transition hover:scale-200 duration-300">
+                    class="hidden md:flex flex-col md:flex-row items-center justify-center gap-4 md:gap-4 lg:gap-16 text-lg font-medium pt-2 text-white transition">
                     <a href="#" class="hover:text-blue-400">Home</a>
                     <a href="#" class="hover:text-blue-400">About</a>
                     <a href="#" class="hover:text-blue-400">Services</a>
@@ -50,11 +50,11 @@
                 <!-- Button-Area -->
                 <div class="flex justify-center md:justify-end gap-4">
                     <i
-                        class="fa-solid fa-magnifying-glass border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+                        class="fa-solid fa-magnifying-glass border p-4 rounded-lg hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
                     <i
-                        class="fa-solid fa-share-nodes border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+                        class="fa-solid fa-share-nodes border p-4 rounded-lg hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
                     <i
-                        class="fa-solid fa-moon border p-4 rounded-lg bg-blue-400 hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
+                        class="fa-solid fa-moon border p-4 rounded-lg hover:bg-blue-500 text-white transition cursor-pointer hover:scale-200 transition duration-300"></i>
 
                 </div>
 
@@ -71,7 +71,9 @@
 
                         <div class="">
                             <h1 class="text-4xl md:text-6xl font-bold text-gray-800 text-white">Brand New</h1>
-                            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mt-2 text-white hover:text-blue-400">Collection</h1>
+                            <h1
+                                class="text-5xl md:text-7xl font-bold text-gray-900 mt-2 text-white hover:text-blue-400">
+                                Collection</h1>
                         </div>
 
                         <div class="py-6 text-gray-700 font-medium leading-7 text-white">
@@ -93,7 +95,7 @@
 
                         <div class="">
                             <button
-                                class="border rounded-lg py-3 px-10 bg-blue-400 hover:bg-green-500 text-white cursor-pointer transition duration-300 font-bold active:bg-red-500 active:scale-120">Shop
+                                class="border rounded-lg py-3 px-10 hover:bg-green-500 text-white cursor-pointer transition duration-300 font-bold active:bg-red-500 active:scale-120">Shop
                                 now</button>
                         </div>
 
@@ -163,13 +165,113 @@
 
         </section>
 
+        <!-- Open BIG card -->
+
+        <div id="bigCard" class="md:mx-10 xl:mx-100 hidden">
+
+            <div class="bg-[#E1F2E7] p-5 border rounded-4xl">
+
+                <!-- Product Image -->
+                <img id="bigImage" src="" class="border-3 border-blue-800 h-100 w-full object-cover mb-5 rounded-4xl">
+
+                <!-- Product Name + Price -->
+                <div>
+
+                    <h1 id="bigTitle" class=" rounded-full py-1 px-4 text-4xl md:text-5xl font-bold mb-2 transition hover:scale-105 hover:bg-green-300">
+                    </h1>
+
+                    <p id="bigPrice" class=" rounded-full py-1 px-4 text-2xl md:text-4xl font-bold transition hover:scale-105 hover:bg-yellow-200">
+                    </p>
+
+                </div>
+
+                <!-- Specifications -->
+                <div class="my-4">
+
+                    <h1 class="text-center text-2xl font-bold pb-3">
+                        Specifications
+                    </h1>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:text-center">
+
+                        <p id="spec1" class="border-2 rounded-xl px-2 py-1 font-semibold md:p-3 transition hover:scale-105 hover:bg-blue-300"></p>
+
+                        <p id="spec2" class="border-2 rounded-xl px-2 py-1 font-semibold md:p-3 transition hover:scale-105 hover:bg-blue-300"></p>
+
+                        <p id="spec3" class="border-2 rounded-xl px-2 py-1 font-semibold md:p-3 transition hover:scale-105 hover:bg-blue-300"></p>
+
+                        <p id="spec4" class="border-2 rounded-xl px-2 py-1 font-semibold md:p-3 transition hover:scale-105 hover:bg-blue-300"></p>
+
+                    </div>
+
+                </div>
+
+                <!-- Description -->
+                <div>
+
+                    <h1 class="text-center text-2xl font-bold pb-3">
+                        Description
+                    </h1>
+
+                    <p id="bigDescription" class="text-center px-10 font-semibold"></p>
+
+                </div>
+
+                <!-- Quantity -->
+                <div class="my-5 flex justify-center items-center gap-4">
+
+                    <p class="font-bold text-xl">
+                        Quantity:
+                    </p>
+
+                    <div class="flex items-center gap-3">
+
+                        <button id="minusBtn" class="border px-4 py-2 rounded bg-red-400 text-white">
+                            -
+                        </button>
+
+                        <span id="count" class="text-2xl font-bold">
+                            1
+                        </span>
+
+                        <button id="plusBtn" class="border px-4 py-2 rounded bg-green-500 text-white">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Total Price -->
+                <div class="text-center my-5">
+
+                    <h1 class="text-3xl font-bold">
+                        Total: RS.
+                        <span id="totalPrice">0</span>
+                    </h1>
+
+                </div>
+
+                <!-- Buy Button -->
+                <div class="flex justify-center">
+
+                    <button id="buyButton" class="border px-20 py-3 rounded-full bg-green-400 font-bold animate-bounce hover:bg-blue-300">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
         <!-- New Arrivals Cards -->
 
         <div class="p-6 md:p-10">
 
             <!-- Header box -->
             <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
-                <h2 class="text-5xl font-bold text-white animate-bounce">New Arrivals</h2>
+                <h2 class="text-5xl font-bold text-white">New Arrivals</h2>
 
 
                 <button
@@ -182,29 +284,26 @@
             <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                 <!-- card1 -->
-                <div
-                    class="group bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="iPhone 15 Pro" data-price="299999" data-image="iPhone-15-Pro.jpg"
+                    data-storage="256GB Storage" data-camera="48MP Camera" data-chip="A17 Pro Chip"
+                    data-display="6.1-inch Display"
+                    data-description="The iPhone 15 Pro comes with a titanium design, powerful performance, and advanced camera features.">
 
-                    <img src="Mobile-1.webp" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="iPhone-15-Pro.jpg" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
-                    <div class="group-hover:text-blue-600 p-5">
+                    <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            iPhone 15 Pro
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -213,28 +312,26 @@
                 </div>
 
                 <!-- card2 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="iPhone 15 Plus" data-price="279999" data-image="iPhone-15-plus.png"
+                    data-storage="256GB Storage" data-camera="48MP Dual Camera" data-chip="A16 Bionic Chip"
+                    data-display="6.7-inch Super Retina XDR Display"
+                    data-description="The iPhone 15 Plus offers a larger display, longer battery life, and powerful performance for daily tasks and entertainment.">
 
-                    <img src="Mobile-2.jpg" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="iPhone-15-plus.png" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            iPhone 15 Plus
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -244,28 +341,26 @@
 
                 <!-- Card3 -->
 
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="Samsung Galaxy S24 Ultra" data-price="349999" data-image="Samsung Galaxy S24 Ultra.webp"
+                    data-storage="512GB Storage" data-camera="200MP Camera" data-chip="Snapdragon 8 Gen 3"
+                    data-display="6.8-inch Display"
+                    data-description="The Galaxy S24 Ultra delivers premium performance, AI-powered features, and a stunning camera system.">
 
-                    <img src="Mobile-3.webp" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="Samsung Galaxy S24 Ultra.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            Samsung Galaxy S24 Ultra
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -274,28 +369,26 @@
                 </div>
 
                 <!-- Card4 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="Samsung Galaxy A55" data-price="149999" data-image="samsung-galaxy-a55.webp"
+                    data-storage="256GB Storage" data-camera="50MP Camera" data-chip="Exynos 1480"
+                    data-display="6.6-inch Super AMOLED Display"
+                    data-description="The Galaxy A55 offers smooth performance, long battery life, and a vibrant display for everyday use.">
 
-                    <img src="Mobile-4.webp" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="samsung-galaxy-a55.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            Samsung Galaxy A55
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -304,28 +397,26 @@
                 </div>
 
                 <!-- card5 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="MacBook Air M3" data-price="399999" data-image="M3-MacBook-Air-1.webp"
+                    data-storage="512GB SSD" data-camera="1080p FaceTime HD Camera" data-chip="Apple M3 Chip"
+                    data-display="13.6-inch Liquid Retina Display"
+                    data-description="The MacBook Air M3 provides fast performance, lightweight portability, and excellent battery life.">
 
-                    <img src="lap-1.jpg" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="M3-MacBook-Air-1.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            MacBook Air M3
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -334,28 +425,26 @@
                 </div>
 
                 <!-- card6 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="Dell XPS 15" data-price="459999" data-image="Dell XPS 15.webp" data-storage="1TB SSD"
+                    data-camera="720p HD Camera" data-chip="Intel Core i7 13th Gen"
+                    data-display="15.6-inch OLED Display"
+                    data-description="The Dell XPS 15 combines premium design, powerful processing, and immersive visuals for professionals.">
 
-                    <img src="lap-2.webp" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="Dell XPS 15.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            Dell XPS 15
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -364,28 +453,26 @@
                 </div>
 
                 <!-- Card7 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="HP Pavilion 14" data-price="189999" data-image="HP Pavilion 14.webp"
+                    data-storage="512GB SSD" data-camera="720p Webcam" data-chip="Intel Core i5 12th Gen"
+                    data-display="14-inch Full HD Display"
+                    data-description="The HP Pavilion 14 is a stylish and reliable laptop designed for students and office productivity.">
 
-                    <img src="lap-3.webp" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="HP Pavilion 14.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            HP Pavilion 14
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -394,28 +481,26 @@
                 </div>
 
                 <!-- Card8 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="Lenovo Legion 5" data-price="329999" data-image="Lenovo Legion 5.webp"
+                    data-storage="1TB SSD" data-camera="HD Webcam" data-chip="AMD Ryzen 7"
+                    data-display="15.6-inch 165Hz Display"
+                    data-description="The Lenovo Legion 5 is a gaming laptop with powerful graphics, smooth gameplay, and advanced cooling.">
 
-                    <img src="lap-4.webp" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="Lenovo Legion 5.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            Lenovo Legion 5
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -424,28 +509,25 @@
                 </div>
 
                 <!-- card9 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-
-                    <img src="Ipad-1.jpg" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="iPad Pro M4" data-price="379999" data-image="iPad Pro M4.webp"
+                    data-storage="512GB Storage" data-camera="12MP Ultra Wide Camera" data-chip="Apple M4 Chip"
+                    data-display="11-inch Ultra Retina XDR Display"
+                    data-description="The iPad Pro M4 delivers exceptional speed, a stunning display, and professional-grade creative tools.">
+                    <img src="iPad Pro M4.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            iPad Pro M4
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -454,28 +536,26 @@
                 </div>
 
                 <!-- card10 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="Samsung Galaxy Tab S9" data-price="249999" data-image="Samsung Galaxy Tab S9.webp"
+                    data-storage="256GB Storage" data-camera="13MP Rear Camera" data-chip="Snapdragon 8 Gen 2"
+                    data-display="11-inch Dynamic AMOLED 2X Display"
+                    data-description="The Galaxy Tab S9 offers premium entertainment, multitasking, and productivity features with S Pen support.">
 
-                    <img src="Ipad-2.jpg" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="Samsung Galaxy Tab S9.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            Samsung Galaxy Tab S9
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -484,29 +564,26 @@
                 </div>
 
                 <!-- Card11 -->
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="Xiaomi Pad 6" data-price="119999" data-image="Xiaomi Pad 6.webp"
+                    data-storage="128GB Storage" data-camera="13MP Camera" data-chip="Snapdragon 870"
+                    data-display="11-inch 144Hz Display"
+                    data-description="The Xiaomi Pad 6 combines smooth performance, immersive visuals, and long battery life at an affordable price.">
 
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
-
-                    <img src="Mobile-3.webp" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                    <img src="Xiaomi Pad 6.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
                     <div class="p-5">
 
                         <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
+                            Xiaomi Pad 6
                         </h3>
 
                         <p class="text-gray-600 text-sm mb-4">
                             Premium quality product with modern design.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
-
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        <button
+                            class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
                             Add to Cart
                         </button>
 
@@ -514,110 +591,75 @@
 
                 </div>
 
-                <!-- Card4 -->
-                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
 
-                    <img src="Mobile-4.webp" alt="Mobile"
-                        class="bg-gray-300 h-52 w-full object-cover flex items-center justify-center text-gray-600 text-xl" />
+                <!-- Card12 -->
+                <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+                    data-name="Acer Nitro 5" data-price="259999" data-image="Acer Nitro 5.webp" data-storage="512GB SSD"
+                    data-camera="HD Webcam" data-chip="Intel Core i7 12th Gen"
+                    data-display="15.6-inch 144Hz Full HD Display"
+                    data-description="The Acer Nitro 5 offers smooth gaming performance, fast refresh rates, and reliable multitasking capabilities.">
+                
 
-                    <div class="p-5">
+                <img src="Acer Nitro 5.webp" alt="Mobile" class="bg-gray-300 h-52 w-full object-cover">
 
-                        <h3 class="text-xl font-bold mb-2">
-                            Fashion Product
-                        </h3>
+                <div class="p-5">
 
-                        <p class="text-gray-600 text-sm mb-4">
-                            Premium quality product with modern design.
-                        </p>
+                    <h3 class="text-xl font-bold mb-2">
+                        Acer Nitro 5
+                    </h3>
 
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="border px-3 py-1 rounded-full text-sm">New</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Hot</span>
-                            <span class="border px-3 py-1 rounded-full text-sm">Trending</span>
-                        </div>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Premium quality product with modern design.
+                    </p>
 
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
-                            Add to Cart
-                        </button>
-
-                    </div>
+                    <button
+                        class="addButton w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition">
+                        Add to Cart
+                    </button>
 
                 </div>
 
             </div>
+
         </div>
+    </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
 
-        <!-- Footer -->
-        <footer class="bg-gray-800 text-gray-300">
-            <div class="max-w-7xl mx-auto px-6 py-12">
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300">
+        <div class="max-w-7xl mx-auto px-6 py-12">
 
-                <!-- Top Footer -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 items-center">
-
-                    <!-- Brand -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-white">Tech-Center</h2>
-                        <p class="mt-4 text-sm leading-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit non quia perferendis voluptates alias?
-                        </p>
-
-                        <!-- Social Icons -->
-                        <div class="flex space-x-4 mt-6">
-                            <a href="#" class="hover:text-white transition">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-
-                            <a href="#" class="hover:text-white transition">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-
-                            <a href="#" class="hover:text-white transition">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Quick Links -->
-                    <div>
-                        <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
-                        <ul class="space-y-3 text-sm">
-                            <li><a href="#" class="hover:text-white transition">Home</a></li>
-                            <li><a href="#" class="hover:text-white transition">About</a></li>
-                            <li><a href="#" class="hover:text-white transition">Services</a></li>
-                            <li><a href="#" class="hover:text-white transition">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Resources -->
-                    <div>
-                        <h3 class="text-white text-lg font-semibold mb-4">Resources</h3>
-                        <ul class="space-y-3 text-sm">
-                            <li><a href="#" class="hover:text-white transition">Blog</a></li>
-                            <li><a href="#" class="hover:text-white transition">Help Center</a></li>
-                            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
-                            <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
-                        </ul>
-                    </div>
+            <!-- Bottom Footer -->
+            <div
+                class="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
 
 
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="hover:text-white transition">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="hover:text-white transition">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" class="hover:text-white transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
 
-                <!-- Bottom Footer -->
-                <div
-                    class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
-                    <p>© 2026 Tech-Center. All rights reserved.</p>
+                <p>© 2026 Tech-Center. All rights reserved.</p>
 
-                    <div class="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" class="hover:text-white transition">Privacy</a>
-                        <a href="#" class="hover:text-white transition">Terms</a>
-                        <a href="#" class="hover:text-white transition">Cookies</a>
-                    </div>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy</a>
+                    <a href="#" class="hover:text-white transition">Terms</a>
+                    <a href="#" class="hover:text-white transition">Cookies</a>
                 </div>
-
             </div>
-        </footer>
+
+        </div>
+    </footer>
 
     </div>
 
@@ -625,35 +667,158 @@
 
 <script>
 
+    // NAVBAR
+
     const navBtn = document.getElementById("nav-btn");
-
     const navlist = document.getElementById("nav-list");
-
     const navIcon = document.getElementById("nav-icon");
-
 
     navBtn.addEventListener("click", () => {
 
         navlist.classList.toggle("hidden");
-
         navlist.classList.toggle("flex");
-
 
         if (navIcon.classList.contains("fa-bars")) {
 
             navIcon.classList.remove("fa-bars");
-
             navIcon.classList.add("fa-xmark");
 
         } else {
 
             navIcon.classList.remove("fa-xmark");
-
             navIcon.classList.add("fa-bars");
 
         }
 
     });
+
+
+    // BIG CARD FUNCTIONALITY
+
+    const bigCard = document.getElementById("bigCard");
+
+    const bigImage = document.getElementById("bigImage");
+    const bigTitle = document.getElementById("bigTitle");
+    const bigPrice = document.getElementById("bigPrice");
+
+    const spec1 = document.getElementById("spec1");
+    const spec2 = document.getElementById("spec2");
+    const spec3 = document.getElementById("spec3");
+    const spec4 = document.getElementById("spec4");
+
+    const bigDescription = document.getElementById("bigDescription");
+
+    const countText = document.getElementById("count");
+    const totalPrice = document.getElementById("totalPrice");
+
+    const plusBtn = document.getElementById("plusBtn");
+    const minusBtn = document.getElementById("minusBtn");
+
+    const buyBtn = document.getElementById("buyButton");
+
+
+    let quantity = 1;
+    let currentPrice = 0;
+
+
+    // ALL ADD TO CART BUTTONS
+
+    const addButtons = document.querySelectorAll(".addButton");
+
+    addButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const card = button.closest(".product-card");
+
+            // GET DATA
+
+            const name = card.dataset.name;
+            const price = Number(card.dataset.price);
+            const image = card.dataset.image;
+
+            const storage = card.dataset.storage;
+            const camera = card.dataset.camera;
+            const chip = card.dataset.chip;
+            const display = card.dataset.display;
+
+            const description = card.dataset.description;
+
+            // RESET QUANTITY
+
+            quantity = 1;
+            currentPrice = price;
+
+            // SHOW BIG CARD
+
+            bigCard.style.display = "block";
+
+            // UPDATE CONTENT
+
+            bigImage.src = image;
+
+            bigTitle.textContent = name;
+
+            bigPrice.textContent = `RS. ${price.toLocaleString()}`;
+
+            spec1.textContent = storage;
+            spec2.textContent = camera;
+            spec3.textContent = chip;
+            spec4.textContent = display;
+
+            bigDescription.textContent = description;
+
+            countText.textContent = quantity;
+
+            totalPrice.textContent = price.toLocaleString();
+
+        });
+
+    });
+
+
+    // PLUS BUTTON
+
+    plusBtn.addEventListener("click", () => {
+
+        quantity++;
+
+        updateTotal();
+
+    });
+
+
+    // MINUS BUTTON
+
+    minusBtn.addEventListener("click", () => {
+
+        if (quantity > 1) {
+
+            quantity--;
+
+            updateTotal();
+
+        }
+
+    });
+
+    // BUY BUTTON FUNCTION
+
+    buyBtn.addEventListener('click', ()=> {
+        alert('Your order has been placed successfully.');
+    })
+
+    // UPDATE TOTAL FUNCTION
+
+    function updateTotal() {
+
+        countText.textContent = quantity;
+
+        const total = currentPrice * quantity;
+
+        totalPrice.textContent = total.toLocaleString();
+
+    }
 
 </script>
 
